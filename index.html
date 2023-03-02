@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POSSE検定</title>
+    <!-- スタイルシート読み込み -->
+    <link rel="stylesheet" href="../assets/styles/common.css" />
+    <!-- Google Fonts読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Plus+Jakarta+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../assets/scripts/common.js" defer></script>
+    <script src="../assets/scripts/quiz.js" defer></script>
+  </head>
+
+  <body>
+    <header id="js-header" class="l-header p-header">
+      <div class="p-header__logo">
+        <img src="../assets/img/logo.svg" alt="POSSE" />
+      </div>
+      <button class="p-header__button" id="js-headerButton"></button>
+      </div>
+    </header>
+    <!-- /.l-header .p-header -->
+
+    <main class="l-main">
+      <section class="p-hero p-quiz-hero">
+        <div class="l-container">
+          <h1 class="p-hero__title">
+            <span class="p-hero__title__label">POSSE課題</span>
+            <span class="p-hero__title__inline">POSSE検定</span>
+          </h1>
+        </div>
+      </section>
+      <!-- /.p-hero .p-quiz-hero -->
+
+      <div class="p-quiz-container l-container">
+        <section class="p-quiz-box js-quiz" data-quiz="0">
+          <div class="p-quiz-box__question">
+            <h2 class="p-quiz-box__question__title">
+              <span class="p-quiz-box__label">Q1</span>
+              <span class="p-quiz-box__question__title__text"
+                >小谷さんは前職で南アフリカとどこの国のネットワークを繋ぐ仕事をしていたでしょう？</span
+              >
+            </h2>
+          </div>
+          <div class="p-quiz-box__answer">
+            <span class="p-quiz-box__label p-quiz-box__label--accent">A</span>
+            <ul class="p-quiz-box__answer__list">
+              <li class="p-quiz-box__answer__item">
+                <button
+                  class="p-quiz-box__answer__button js-answer"
+                  data-answer="0"
+                >
+                  アゼルバイジャン
+                </button>
+              </li>
+              <li class="p-quiz-box__answer__item">
+                <button
+                  class="p-quiz-box__answer__button js-answer"
+                  data-answer="1"
+                >
+                  マレーシア
+                </button>
+              </li>
+              <li class="p-quiz-box__answer__item">
+                <button
+                  class="p-quiz-box__answer__button js-answer"
+                  data-answer="2"
+                >
+                  カザフスタン
+                </button>
+              </li>
+            </ul>
+            <div class="p-quiz-box__answer__correct js-answerBox">
+              <p class="p-quiz-box__answer__correct__title js-answerTitle"></p>
+              <p class="p-quiz-box__answer__correct__content">
+                <span class="p-quiz-box__answer__correct__content__label"
+                  >A</span
+                >
+                <span class="js-answerText"></span>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="p-quiz-box js-quiz" data-quiz="1">
+          <div class="p-quiz-box__question">
+            <h2 class="p-quiz-box__question__title">
+              <span class="p-quiz-box__label">Q2</span>
+              <span class="p-quiz-box__question__title__text"
+                >第3回ハッカソンのテーマはなんでしょう？</span
+              >
+            </h2>
+          </div>
+          <div class="p-quiz-box__answer">
+            <span class="p-quiz-box__label p-quiz-box__label--accent">A</span>
+            <ul class="p-quiz-box__answer__list">
+              <li class="p-quiz-box__answer__item">
+                <button
+                  class="p-quiz-box__answer__button js-answer"
+                  data-answer="0"
+                >
+                  Be One
+                </button>
+              </li>
+              <li class="p-quiz-box__answer__item">
+                <button
+                  class="p-quiz-box__answer__button js-answer"
+                  data-answer="1"
+                >
+                  「自分史上最高」を仲間と
+                </button>
+              </li>
+              <li class="p-quiz-box__answer__item">
+                <button
+                  class="p-quiz-box__answer__button js-answer"
+                  data-answer="2"
+                >
+                  勝ちにこだわる
+                </button>
+              </li>
+            </ul>
+            <div class="p-quiz-box__answer__correct js-answerBox">
+              <p class="p-quiz-box__answer__correct__title js-answerTitle"></p>
+              <p class="p-quiz-box__answer__correct__content">
+                <span class="p-quiz-box__answer__correct__content__label"
+                  >A</span
+                >
+                <span class="js-answerText"></span>
+              </p>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="p-quiz-box js-quiz" data-quiz="2">
+          <div class="p-quiz-box__question">
+            <h2 class="p-quiz-box__question__title">
+              <span class="p-quiz-box__label">Q3</span>
+              <span class="p-quiz-box__question__title__text"
+                >サバリ引退式で千翼子は何分スピーチをしたでしょう？</span
+              >
+            </h2>
+          </div>
+          <div class="p-quiz-box__answer">
+            <span class="p-quiz-box__label p-quiz-box__label--accent">A</span>
+            <ul class="p-quiz-box__answer__list">
+              <li class="p-quiz-box__answer__item">
+                <button
+                  class="p-quiz-box__answer__button js-answer"
+                  data-answer="0"
+                >
+                  3分
+                </button>
+              </li>
+              <li class="p-quiz-box__answer__item">
+                <button
+                  class="p-quiz-box__answer__button js-answer"
+                  data-answer="1"
+                >
+                  5分
+                </button>
+              </li>
+              <li class="p-quiz-box__answer__item">
+                <button
+                  class="p-quiz-box__answer__button js-answer"
+                  data-answer="2"
+                >
+                  10分
+                </button>
+              </li>
+            </ul>
+            <div class="p-quiz-box__answer__correct js-answerBox">
+              <p class="p-quiz-box__answer__correct__title js-answerTitle"></p>
+              <p class="p-quiz-box__answer__correct__content">
+                <span class="p-quiz-box__answer__correct__content__label"
+                  >A</span
+                >
+                <span class="js-answerText"></span>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="p-quiz-box js-quiz" data-quiz="3">
+          <div class="p-quiz-box__question">
+            <h2 class="p-quiz-box__question__title">
+              <span class="p-quiz-box__label">Q4</span>
+              <span class="p-quiz-box__question__title__text"
+                >POSSE Jobが正式に開始した初期の3人はシュート、だいきと誰でしょう？</span
+              >
+            </h2>
+          </div>
+          <div class="p-quiz-box__answer">
+            <span class="p-quiz-box__label p-quiz-box__label--accent">A</span>
+            <ul class="p-quiz-box__answer__list">
+              <li class="p-quiz-box__answer__item">
+                <button
+                  class="p-quiz-box__answer__button js-answer"
+                  data-answer="0"
+                >
+                  しゅん
+                </button>
+              </li>
+              <li class="p-quiz-box__answer__item">
+                <button
+                  class="p-quiz-box__answer__button js-answer"
+                  data-answer="1"
+                >
+                  まきこ
+                </button>
+              </li>
+              <li class="p-quiz-box__answer__item">
+                <button
+                  class="p-quiz-box__answer__button js-answer"
+                  data-answer="2"
+                >
+                  ともくん
+                </button>
+              </li>
+            </ul>
+            <div class="p-quiz-box__answer__correct js-answerBox">
+              <p class="p-quiz-box__answer__correct__title js-answerTitle"></p>
+              <p class="p-quiz-box__answer__correct__content">
+                <span class="p-quiz-box__answer__correct__content__label"
+                  >A</span
+                >
+                <span class="js-answerText"></span>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="p-quiz-box js-quiz" data-quiz="4">
+          <div class="p-quiz-box__question">
+            <h2 class="p-quiz-box__question__title">
+              <span class="p-quiz-box__label">Q5</span>
+              <span class="p-quiz-box__question__title__text"
+                >1.0期生のもりはるが元いたサークルはどこでしょう？</span
+              >
+            </h2>
+          </div>
+          <div class="p-quiz-box__answer">
+            <span class="p-quiz-box__label p-quiz-box__label--accent">A</span>
+            <ul class="p-quiz-box__answer__list">
+              <li class="p-quiz-box__answer__item">
+                <button
+                  class="p-quiz-box__answer__button js-answer"
+                  data-answer="0"
+                >
+                  JADE
+                </button>
+              </li>
+              <li class="p-quiz-box__answer__item">
+                <button
+                  class="p-quiz-box__answer__button js-answer"
+                  data-answer="1"
+                >
+                  Revolve
+                </button>
+              </li>
+              <li class="p-quiz-box__answer__item">
+                <button
+                  class="p-quiz-box__answer__button js-answer"
+                  data-answer="2"
+                >
+                  ラリー
+                </button>
+              </li>
+            </ul>
+            <div class="p-quiz-box__answer__correct js-answerBox">
+              <p class="p-quiz-box__answer__correct__title js-answerTitle"></p>
+              <p class="p-quiz-box__answer__correct__content">
+                <span class="p-quiz-box__answer__correct__content__label"
+                  >A</span
+                >
+                <span class="js-answerText"></span>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="p-quiz-box js-quiz" data-quiz="5">
+          <div class="p-quiz-box__question">
+            <h2 class="p-quiz-box__question__title">
+              <span class="p-quiz-box__label">Q6</span>
+              <span class="p-quiz-box__question__title__text"
+                >POSSEの概念が登場する本はどれでしょう？</span
+              >
+            </h2>
+          </div>
+          <div class="p-quiz-box__answer">
+            <span class="p-quiz-box__label p-quiz-box__label--accent">A</span>
+            <ul class="p-quiz-box__answer__list">
+              <li class="p-quiz-box__answer__item">
+                <button
+                  class="p-quiz-box__answer__button js-answer"
+                  data-answer="0"
+                >
+                  7つの習慣
+                </button>
+              </li>
+              <li class="p-quiz-box__answer__item">
+                <button
+                  class="p-quiz-box__answer__button js-answer"
+                  data-answer="1"
+                >
+                  ワークシフト
+                </button>
+              </li>
+              <li class="p-quiz-box__answer__item">
+                <button
+                  class="p-quiz-box__answer__button js-answer"
+                  data-answer="2"
+                >
+                  ビジョナリーカンパニー
+                </button>
+              </li>
+            </ul>
+            <div class="p-quiz-box__answer__correct js-answerBox">
+              <p class="p-quiz-box__answer__correct__title js-answerTitle"></p>
+              <p class="p-quiz-box__answer__correct__content">
+                <span class="p-quiz-box__answer__correct__content__label"
+                  >A</span
+                >
+                <span class="js-answerText"></span>
+              </p>
+            </div>
+          </div>
+        </section>
+
+    <footer class="l-footer p-footer">
+      <div class="l-footer__inner">
+        <div class="p-footer__siteinfo">
+          <span class="p-footer__logo">
+            <img src="../assets/img/logo.svg" alt="POSSE" />
+          </span>
+          <a
+            href="https://posse-ap.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="p-footer__siteinfo__link"
+            >POSSE公式サイト</a
+          >
+        </div>
+      </div>
+      <div class="p-footer__copyright">
+        <small lang="en">©︎2022 POSSE</small>
+      </div>
+    </footer>
+    <!-- /.l-footer .p-footer -->
+  </body>
+</html>
