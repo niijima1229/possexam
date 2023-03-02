@@ -738,7 +738,7 @@ body {
 }
 
 .p-quiz-hero {
-	background: url(../img/bg-hero.jpg) center center/cover;
+	background: url('https://github.com/niijima1229/possexam/blob/main/assets/img/bg-hero.jpg?raw=true') center center/cover;
 }
 
 .p-quiz-container {
@@ -1135,7 +1135,7 @@ body {
 	}
 
 		.p-quiz-hero {
-		background-image: url(../img/bg-hero.jpg);
+		background-image: url('https://github.com/niijima1229/possexam/blob/main/assets/img/bg-hero.jpg?raw=true');
 	}
 
 	.p-quiz-container {
