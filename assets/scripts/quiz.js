@@ -46,8 +46,11 @@
     target.classList.add(isCorrect ? 'is-correct' : 'is-incorrect');
   }
 
+  let answeredTimes = 0;
+  let correctedTimes = 0;
+
   // 各問題の中での処理
-  allQuiz.forEach(quiz => {
+  allQuiz.forEach((quiz, quizIndex) => {
     const answers = quiz.querySelectorAll('.js-answer');
     const selectedQuiz = Number(quiz.getAttribute('data-quiz'));
     const answerBox = quiz.querySelector('.js-answerBox');
@@ -65,10 +68,25 @@
         // 正解ならtrue, 不正解ならfalseをcheckCorrectに格納
         const isCorrect = CORRECT_ANSWERS[selectedQuiz].index === selectedAnswer;
 
+		answeredTimes++;
+		if (isCorrect) correctedTimes++;
+
         // 回答欄にテキストやclass名を付与
         answerText.innerText = CORRECT_ANSWERS[selectedQuiz].value;
         setTitle(answerTitle, isCorrect);
         setClassName(answerBox, isCorrect);
+
+		if (answeredTimes == allQuiz.length) {
+			document.getElementById('totalResult').innerHTML = `${allQuiz.length}問中${correctedTimes}問正解です！`
+			if (answeredTimes == correctedTimes) {
+				document.getElementById('totalResultNote').innerHTML = `あなたはPOSSEマスターです!`
+			} else if (correctedTimes/answeredTimes > 0.5) {
+				document.getElementById('totalResultNote').innerHTML = `あなたはかなりPOSSEに詳しいです!`
+			} else {
+				document.getElementById('totalResultNote').innerHTML = `あなたはPOSSEについてもっと知る必要があります!`
+			}
+			document.getElementById('totalResultBox').style.display = 'block'
+		}
       })
     })
   })
