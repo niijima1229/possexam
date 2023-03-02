@@ -285,7 +285,6 @@ img {
 	font-family: "posse-icon";
 	font-style: normal;
 	font-weight: normal;
-	src: url("../fonts/posse-icon.ttf?bbqgr3") format("truetype"), url("../fonts/posse-icon.woff?bbqgr3") format("woff"), url("../fonts/posse-icon.svg?bbqgr3#posse-icon") format("svg");
 }
 
 i, .icomoon-liga {
@@ -586,13 +585,7 @@ body {
 	margin-top: 64px;
 }
 
-.p-line__body {
-	background: url(../img/bg-line.jpg) center center/cover;
-	border-radius: 28px;
-	overflow: hidden;
-	padding: 42px 24px;
-	position: relative;
-}
+
 
 .p-line__body::before {
 	background-color: rgba(0, 113, 188, 0.9);
@@ -1141,7 +1134,7 @@ body {
 		max-height: 680px;
 	}
 
-	.p-quiz-hero {
+		.p-quiz-hero {
 		background-image: url(../img/bg-hero.jpg);
 	}
 
